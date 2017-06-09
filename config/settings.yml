@@ -1,0 +1,10 @@
+slide_slick:
+  slide:
+    image_01: "slide/slide_1.jpg"
+    image_02: "slide/slide_2.jpg"
+    image_03: "slide/slide_3.jpg"
+    image_04: "slide/slide_4.jpg"
+    image_05: "slide/slide_5.jpg"
+    image_06: "slide/slide_6.jpg"
+    image_07: "slide/slide_7.jpg"
+    image_08: "slide/slide_8.jpg"

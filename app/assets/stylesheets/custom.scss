@@ -1,0 +1,26 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background: image-url("images/full-bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.product {
+  min-height: 200px;
+  .image-product {
+    img {
+      display: block;
+      max-width: 150px !important;
+      max-height: 120px !important;
+      margin: 0 auto;
+    }
+  }
+
+  &:hover {
+    border: solid 1px #dfdfdf;
+  }
+}
