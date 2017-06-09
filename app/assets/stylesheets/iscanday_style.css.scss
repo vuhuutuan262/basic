@@ -1,0 +1,120 @@
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.slider-iscanday {
+  margin-top: 17px;
+  text-align: center;
+  ul.slick-dots{
+    padding: 0 !important;
+  }
+}
+.iscanday-carousel .owl-item {
+  text-align: center;
+}
+.iscanday-carousel .item {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.slider-iscanday .owl-dots  {
+  display: inline-block;
+}
+.slider-iscanday .owl-dots .owl-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #9B9B9B;
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 50px;
+}
+.slider-iscanday .owl-dots .owl-dot:first-child {
+  margin-left: 0;
+}
+.slider-iscanday .owl-dots .owl-dot:last-child {
+  margin-right: 0;
+}
+.slider-iscanday .owl-dots .owl-dot.active,
+.slider-iscanday .owl-dots .owl-dot:hover {
+  background-color: #3FA9F5;
+}
+.slider-iscanday .iscanday-carousel {
+  margin: 0 auto;
+}
+.slider-iscanday .owl-carousel .owl-item img {
+  display: block;
+  width: auto!important;
+  height: 250px!important;
+  margin: 0 auto;
+}
+.desc-iscanday {
+  margin: 6px auto 0;
+  min-width: 200px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.desc-iscanday p {
+  line-height: 1.6;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.slick-slider .slick-slide img {
+    margin: 0 auto;
+    width: auto;
+  }
+
+.slick-slider .slick-dots {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.slick-slider .slick-dots > li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-top: 9px;
+}
+
+.slick-slide {
+  height: 250px !important;
+}
+
+.slick-slider .slick-dots > li > button {
+  text-indent: -999em;
+  width: 6px;
+  height: 6px;
+  background-color: #9B9B9B;
+  border-radius: 50px;
+  border: 0;
+  transition: background-color 0.25s;
+  outline: none;
+}
+
+.slick-slider .slick-dots > li:hover button, 
+.slick-slider .slick-dots > li.slick-active button {
+  background-color: #3FA9F5;
+}
+
+@media (max-width: 767px) {
+  .slick-slider .slick-slide img {
+    max-height: 495px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slick-slider .slick-slide img {
+    max-height: 276px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo-iscanday img {
+    max-width: 150px;
+  }
+  .slick-slider .slick-slide img {
+    max-height: 214px;
+  }
+}

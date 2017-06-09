@@ -12,4 +12,6 @@
  *
  *= require_tree .
  *= require_self
+ *= require css/slick
+ *= require css/owl.carousel.min
  */
