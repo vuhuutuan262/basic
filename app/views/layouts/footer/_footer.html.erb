@@ -1,0 +1,19 @@
+<footer id="footer">
+  <div class="container">
+    <div class="row footer-primary" style="color: white">
+      <div class="col-md-9">
+      <%= render "layouts/footer/iframe" %>
+      </div>
+      Ngõ 13 Khuất Duy Tiến - Thanh Xuân - Hà Nội
+      Liên hệ: Tuấn - 0989 608 194
+      <ul class="col-md-3 text-right">
+        <li><%= link_to t(".faq"),
+          "#", class: "faq" %></li>
+        <li><%= link_to t(".service_term"), "#",
+          target: "_blank", class: "company" %></li>
+        <li><%= link_to t(".private_policy"),
+          "#", class: "privacy" %></li>
+      </ul>
+    </div>
+  </div>
+</footer>
