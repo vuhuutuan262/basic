@@ -9,8 +9,11 @@
   </head>
 
   <body>
+    <%= render "layouts/header/menu" %>
     <div class="container-fluid">
       <%= yield %>
+      <div id="toTop"><i class="fa fa-arrow-up" aria-hidden="true"></i><%= t(".go_to_top_html") %></div>
     </div>
+    <%= render "layouts/footer/footer" %>
   </body>
 </html>

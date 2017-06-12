@@ -37,3 +37,4 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "bootstrap-sass", "~> 3.3.6"
 gem "sass-rails", "~> 5.0"
 gem "config"
+gem "font-awesome-rails"
