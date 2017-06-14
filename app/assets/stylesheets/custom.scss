@@ -15,7 +15,7 @@ body {
   .image-product {
     img {
       display: block;
-      width: auto !important;
+      width: 100% !important;
       height: 150px !important;
       max-width: 200px !important;
       margin: 0 auto;
@@ -119,4 +119,8 @@ body {
     display: block;
     font-size: 14px + 6;
   }
+}
+
+.margin-center {
+  margin: 10px 0;
 }
