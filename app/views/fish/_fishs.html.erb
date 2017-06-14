@@ -1,0 +1,5 @@
+<div style="min-height: 520px">
+  <%= render partial: "fish", collection: fish %>
+</div>
+<%= paginate fish, theme: "twitter-bootstrap-3",
+  pagination_class: "pagination-sm pull-right", remote: true %>

@@ -29,24 +29,10 @@
       </div>
     </div>
     <div class="col-md-9">
-
-
-
-      <%= render "shared/product" %>
-      <%= render "shared/product" %>
-      <%= render "shared/product" %>
-      <%= render "shared/product" %>
-      <%= render "shared/product" %>
-      <%= render "shared/product" %>
-      <%= render "shared/product" %>
-      <%= render "shared/product" %>
-
-      <%= render "shared/product" %>
-      <%= render "shared/product" %>
-      <%= render "shared/product" %>
-      <%= render "shared/product" %>
-
-
+      <%= render "shared/search_form", search: @search %>
+    <div class="content-fish">
+      <%= render "fishs", fish: @search.search_result %>
+    </div>
     </div>
   </div>
 </div>
