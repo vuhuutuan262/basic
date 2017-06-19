@@ -1,39 +1,89 @@
-<div class="col-md-10 col-md-offset-1">
-  <div class="col-md-12">
-    <%= render "shared/slide" %>
-  </div>
-  <div class="col-md-12">
-    <div class="text-center" style="border-bottom: solid 2px black; margin-bottom: 10px">
-      <h2>Ca thuy sinh</h2>
-    </div>
-    <div class="col-md-3">
-      <div class="panel-body">
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th class="well text-center">Ca</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="padding-left: 20px">> Ca thuy sinh</td>
-            </tr>
-            <tr>
-              <td style="padding-left: 20px">> Ca bio top</td>
-            </tr>
-            <tr>
-              <td style="padding-left: 20px">> Ca nuoc man</td>
-            </tr>
-          </tbody>
-        </table>
+
+  <!--<div class="col-md-12">-->
+    <!--<div class="text-center" style="border-bottom: solid 2px black; margin-bottom: 10px">-->
+      <!--<h2>Ca thuy sinh</h2>-->
+    <!--</div>-->
+    <!--<div class="col-md-3">-->
+      <!--<div class="panel-body">-->
+        <!--<table class="table table-bordered">-->
+          <!--<thead>-->
+            <!--<tr>-->
+              <!--<th class="well text-center">Ca</th>-->
+            <!--</tr>-->
+          <!--</thead>-->
+          <!--<tbody>-->
+            <!--<tr>-->
+              <!--<td style="padding-left: 20px">> Ca thuy sinh</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+              <!--<td style="padding-left: 20px">> Ca bio top</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+              <!--<td style="padding-left: 20px">> Ca nuoc man</td>-->
+            <!--</tr>-->
+          <!--</tbody>-->
+        <!--</table>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-md-9">-->
+      <!--<%= render "shared/search_form", search: @search %>-->
+    <!--<div class="content-fish">-->
+      <!--<%= render "fishs", fish: @search.search_result %>-->
+    <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<div class="container maincontent" style="min-height: 387px;">
+  <div id="category-page">
+    <div class="category-top">
+      <div class="row">
+        <div class="col-md-7">
+          <%= render "shared/search_form", search: @search %>
+          </div>
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-6 col-md-2 col-lg-6 filters-menu">
+              <span class="filters-menu__label hidden-sm-up">Filters</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-md-9">
-      <%= render "shared/search_form", search: @search %>
-    <div class="content-fish">
-      <%= render "fishs", fish: @search.search_result %>
-    </div>
+
+
+    <div class="row">
+      <div class="col-md-4 col-lg-3">
+        <div class="product-filters">
+          <div class="product-filters__categories">
+            <h2><strong>Groceries</strong></h2><ul class="product-filters__categories__childs no-parent"></ul>
+          </div>
+        </div>
+        <div>
+          <h2><!-- react-text: 37 -->Filters<!-- /react-text --><span class="clear-filters float-right">Clear filters</span></h2>
+          <div class="product-filters">
+            <div class="product-filters__attributes">
+              <div><h3><!-- react-text: 43 -->Box Size<!-- /react-text -->
+                <div class="collapse-filters-icon">
+                  <span class="isvg loaded"><!--?xml version="1.0" encoding="utf-8"?-->
+    <!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  </span>
+                </div>
+              </h3>
+                <ul id="box-size">
+                  <li class="item"><label><input type="checkbox" name="box-size" value="100g"><!-- react-text: 50 -->100g<!-- /react-text --></label></li>
+                  <li class="item"><label><input type="checkbox" name="box-size" value="250g"><!-- react-text: 54 -->250g<!-- /react-text --></label></li>
+                  <li class="item"><label><input type="checkbox" name="box-size" value="500g"><!-- react-text: 58 -->500g<!-- /react-text --></label></li>
+                  <li class="item"><label><input type="checkbox" name="box-size" value="1kg"><!-- react-text: 62 -->1kg<!-- /react-text --></label></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-8 col-lg-9 category-list">
+              <%= render "fishs", fish: @search.search_result %>
+      </div>
     </div>
   </div>
-</div>
 </div>

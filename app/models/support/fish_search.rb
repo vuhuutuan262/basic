@@ -10,7 +10,7 @@ class Support::FishSearch
   end
 
   def search_result
-    @fish ||= q_params.result.page(params[:page]).per 8
+    @fish ||= q_params.result.page(params[:page]).per 9
   end
 
   def result_count

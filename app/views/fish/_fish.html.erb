@@ -1,12 +1,16 @@
-<div class="col-md-3" style="margin-bottom: 10px">
-  <div class="product">
-    <div class="image-product">
-      <%= image_tag fish.image, class: "col-centered" %>
-    </div>
+<div class="col-6 col-md-4 product-list">
+  <a href="/products/daniels-inc-70/" class="link--clean">
     <div class="text-center">
-      <a><strong><%= fish.name %></strong></a><br>
-      <%= fish.price %><br>
-      <%= fish.description %>
+      <div>
+        <%= image_tag fish.image, class: "img-responsive" %>
+        <span class="product-list-item-name" title="Daniels Inc">Daniels Inc</span>
+      </div><div class="panel-footer">
+      <div><span itemprop="price"><span>from</span>$45.10</span>
+        <div class="product-list__sale">
+          <span class="product-list__sale__text">Sale</span>
+        </div>
+      </div>
     </div>
-  </div>
+    </div>
+  </a>
 </div>
