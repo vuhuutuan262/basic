@@ -1,0 +1,37 @@
+<%= search_form_for search.q_params, remote: true, class: "form-filter" do |f| %>
+  <div class="product-filters">
+    <div class="product-filters__categories">
+      <h2><strong>Plants</strong></h2>
+    </div>
+  </div>
+  <div style="display: flex; margin-bottom: 20px">
+    <%= f.search_field :name_cont, class: "form-control", placeholder: "Tìm kiếm theo tên" %>
+    <%= button_tag(type: "submit", class: "btn-primary") do %>
+      <i class="fa fa-search"></i>
+    <% end %>
+  </div>
+  <div>
+    <h2>Filters
+      <span class="clear-filters float-right">Clear filters</span>
+    </h2>
+    <div class="product-filters">
+      <div class="product-filters__attributes">
+          <div>
+            <h3>Genus
+              <div class="collapse-filters-icon">
+                <i class="fa fa-filter" aria-hidden="true"></i>
+              </div>
+            </h3>
+            <ul id="check-box-genus">
+              <% Plant.genus.keys.each do |genus| %>
+                <li class="item">
+                  <%= check_box_tag "[q][genus_eq]", Plant.genus[genus],nil, class: "genus" %>
+                  <%= f.label("#{genus}") %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+<% end %>
