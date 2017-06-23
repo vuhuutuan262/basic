@@ -57,6 +57,24 @@
   height: 100px;
 }
 
+.pagination {
+  margin: 10px auto;
+}
+
+.product-list {
+  min-height: 900px;
+}
+
+#carousel-example-generic {
+  ol.carousel-indicators {
+    margin-top: 20px;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    text-decoration: none;
+  }
+}
+
 .slick-prev:before, .slick-next:before { font-family: "slick"; font-size: 60px; line-height: 1; color: black; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev:before { content: "‹"; }
@@ -65,3 +83,5 @@
 [dir="rtl"] .slick-next { left: -10px; top: 70px; right: auto; }
 .slick-next:before { content: "›"; }
 [dir="rtl"] .slick-next:before { content: "‹"; }
+
+

@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require js/slick.min
 //= require js/owl.carousel.min
+//= require js/slide_product.carousel
 //= require_tree .

@@ -1,6 +1,6 @@
-class CreateFish < ActiveRecord::Migration[5.0]
+class CreatePlants < ActiveRecord::Migration[5.0]
   def change
-    create_table :fish do |t|
+    create_table :plants do |t|
       t.string :name
       t.string :image
       t.string :cover
@@ -8,6 +8,9 @@ class CreateFish < ActiveRecord::Migration[5.0]
       t.text :description
       t.integer :price
       t.integer :view, default: 0
+      t.string :image_1
+      t.string :image_2
+      t.string :image_3
 
       t.timestamps
     end

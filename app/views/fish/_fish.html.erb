@@ -3,12 +3,9 @@
     <div class="text-center">
       <div>
         <%= image_tag fish.image, class: "img-responsive" %>
-        <span class="product-list-item-name" title="Daniels Inc">Daniels Inc</span>
+        <span class="product-list-item-name" title="Daniels Inc"><%= fish.name %></span>
       </div><div class="panel-footer">
-      <div><span itemprop="price"><span>from</span>$45.10</span>
-        <div class="product-list__sale">
-          <span class="product-list__sale__text">Sale</span>
-        </div>
+      <div><span itemprop="price"><span>from</span>$<%= fish.price %></span>
       </div>
     </div>
     </div>

@@ -1,0 +1,13 @@
+$(document).on("ready ajaxComplete", function () {
+  $("#check-box-genus .genus").off("click").on("click", function () {
+    $("#check-box-genus .genus").prop("checked",false);
+    $(this).prop("checked", true);
+    $(".form-filter").submit();
+  });
+
+  $("span.clear-filters").off("click").on("click", function () {
+    $("#check-box-genus .genus").prop("checked",false);
+    $(".form-filter [type='search']").val("");
+    $(".form-filter").submit();
+  });
+});

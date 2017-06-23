@@ -1,8 +1,6 @@
-  <div class="row">
-    <%= paginate fish, theme: "twitter-bootstrap-3",
-      pagination_class: " pull-right", remote: true %>
-  </div>
-
-  <div class="row">
-    <%= render partial: "fish", collection: fish %>
-  </div>
+<div class="row product-list">
+  <%= render partial: "fish", collection: fish %>
+</div>
+<div class="row">
+    <%= paginate fish, theme: "twitter-bootstrap-3", remote: true %>
+</div>
