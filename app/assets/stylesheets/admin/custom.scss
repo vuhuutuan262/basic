@@ -1,0 +1,16 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+.container-fluid {
+  padding-top: 75px;
+  color: #4a4a4a;
+}
+
+.page-title {
+  background-color: #dfdfdf;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-weight: bold;
+  border: 1px solid #f8f8f8;
+}

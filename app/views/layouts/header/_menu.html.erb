@@ -20,8 +20,9 @@
                 Your account</a>
             </li>
             <li>
-              <a href="/account/logout/">
-                Log out</a>
+              <%= link_to destroy_admin_session_path, method: :delete do %>
+                Log out
+                <% end %>
             </li>
 
           </ul>

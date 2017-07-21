@@ -1,0 +1,8 @@
+<% Settings.flashes.each do |key, value| %>
+  <% unless flash[key].blank? %>
+    <div class="alert <%= value %> flash-message">
+      <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
+      <%= flash[key] %>
+    </div>
+  <% end %>
+<% end %>

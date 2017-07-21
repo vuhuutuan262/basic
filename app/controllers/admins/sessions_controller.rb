@@ -1,6 +1,3 @@
 class Admins::SessionsController < Devise::SessionsController
-
-  def create
-    binding.pry
-  end
+  layout "admin"
 end
