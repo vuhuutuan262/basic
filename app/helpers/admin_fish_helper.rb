@@ -1,0 +1,2 @@
+module AdminFishHelper
+end
